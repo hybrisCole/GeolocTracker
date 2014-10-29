@@ -6,13 +6,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.firebase.client.Firebase;
+
 
 public class TrackerActivity extends ActionBarActivity {
+
+    private Firebase ref;
+    private static final String FIREBASE_URL = "https://sabanacementerio.firebaseio.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracker);
+        Firebase.setAndroidContext(this);
+        ref = new Firebase(FIREBASE_URL);
     }
 
 
@@ -36,6 +43,6 @@ public class TrackerActivity extends ActionBarActivity {
     }
 
     public void startTrackOnClick(View view) {
-        System.out.println("TROLOLO");
+        ref.push().setValue("SU MADRE");
     }
 }
