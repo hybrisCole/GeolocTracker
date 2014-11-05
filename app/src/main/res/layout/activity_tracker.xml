@@ -44,11 +44,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Long"
-        android:id="@+id/txtLat"
+        android:id="@+id/txtLong"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="116dp"
-        android:textSize="30pt"
+        android:textSize="25pt"
         android:textAlignment="center" />
 
     <TextView
@@ -56,10 +56,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Lat"
-        android:id="@+id/txtLang"
-        android:textSize="30pt"
+        android:id="@+id/txtLat"
+        android:textSize="25pt"
         android:textAlignment="center"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="false" />
 
 </RelativeLayout>
